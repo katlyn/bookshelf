@@ -1,0 +1,42 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^0.5.7",
+    "@prisma/nuxt": "^0.0.35",
+    "nuxt": "^3.13.0",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@prisma/client": "^5.19.1",
+    "@types/eslint__js": "^8.42.3",
+    "eslint": "^9.10.0",
+    "eslint-plugin-vue": "^9.28.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "3.3.3",
+    "prisma": "5.19.1",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.5.0",
+    "vue-tsc": "^2.1.6"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "**/*.{js,ts,vue}": [
+      "prettier --write --ignore-unknown",
+      "eslint"
+    ]
+  }
+}
